@@ -18,7 +18,7 @@ export default function accountReducer(state = initialStateAccount, action) {
       };
     case "account/requestLoan":
       if (state.loan > 0) return state;
-      // LATER
+
       return {
         ...state,
         loan: action.payload.amount,
