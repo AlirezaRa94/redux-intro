@@ -65,3 +65,5 @@ export function deposit(amount, currency) {
     dispatch({ type: "account/deposit", payload: usdAmount });
   };
 }
+
+export default accountSlice.reducer;
